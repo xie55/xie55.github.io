@@ -81,17 +81,27 @@
 
 
 
-<meta name="description" content="xie55的博客">
+<meta name="description" content="git是什么玩意？ Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。 无论您是软件开发人员，网页设计师，还是与团队中的开发人员一起工作的图形设计人员，对版本控制的基本理解已成为使用代码的每个人的必要条件。  常见的使用git的三种情景： 只在本地使用:  首先我们在桌面上创建一个测试用的目录GIt_test，记住一定要cd进入你想使用git的目录，除非你想把你整个桌面上">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git入门">
 <meta property="og:url" content="http://yoursite.com/2018/06/30/git入门/index.html">
 <meta property="og:site_name" content="xie55的博客">
-<meta property="og:description" content="xie55的博客">
+<meta property="og:description" content="git是什么玩意？ Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。 无论您是软件开发人员，网页设计师，还是与团队中的开发人员一起工作的图形设计人员，对版本控制的基本理解已成为使用代码的每个人的必要条件。  常见的使用git的三种情景： 只在本地使用:  首先我们在桌面上创建一个测试用的目录GIt_test，记住一定要cd进入你想使用git的目录，除非你想把你整个桌面上">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-30T10:48:31.862Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstia5mshyj30lb023dg3.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstici4358j30hw01vaa1.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstit82mbzj30k606aaag.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstj0zto7gj30ig075q3g.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstj8lyjf3j30ia05gaai.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstjfrpo54j30y40im0ub.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstjihhsr3j310v0cwjsh.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstjlyk2vej30jt05tmxp.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstjubmwzqj30j308275a.jpg">
+<meta property="og:updated_time" content="2018-06-30T13:59:12.627Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git入门">
-<meta name="twitter:description" content="xie55的博客">
+<meta name="twitter:description" content="git是什么玩意？ Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。 无论您是软件开发人员，网页设计师，还是与团队中的开发人员一起工作的图形设计人员，对版本控制的基本理解已成为使用代码的每个人的必要条件。  常见的使用git的三种情景： 只在本地使用:  首先我们在桌面上创建一个测试用的目录GIt_test，记住一定要cd进入你想使用git的目录，除非你想把你整个桌面上">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/006qwL0ggy1fstia5mshyj30lb023dg3.jpg">
 
 
 
@@ -365,7 +375,72 @@
       
 
       
-        
+        <h1 id="git是什么玩意？"><a href="#git是什么玩意？" class="headerlink" title="git是什么玩意？"></a>git是什么玩意？</h1><ul>
+<li>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</li>
+<li>无论您是软件开发人员，网页设计师，还是与团队中的开发人员一起工作的图形设计人员，对版本控制的基本理解已成为使用代码的每个人的<em>必要</em>条件。</li>
+</ul>
+<h1 id="常见的使用git的三种情景："><a href="#常见的使用git的三种情景：" class="headerlink" title="常见的使用git的三种情景："></a>常见的使用git的三种情景：</h1><ol>
+<li><p>只在本地使用:</p>
+<ul>
+<li><p>首先我们在桌面上创建一个测试用的目录GIt_test，记住一定要cd进入你想使用git的目录，除非你想把你整个桌面上传到Github</p>
+</li>
+<li><p>执行 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstia5mshyj30lb023dg3.jpg" alt=""></p>
+<p>这个时候查看git_test目录里面又多了一个目录 .git/<img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstici4358j30hw01vaa1.jpg" alt=""></p>
+<p> Git 需要的数据和资源都存放在这个目录中</p>
+</li>
+<li><p>接下来我们对该目录做一点改变,比如增加一个README文件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch README.md</span><br></pre></td></tr></table></figure>
+<p>然后我们看一下现在的状态：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+<p>可以看到git提示我们:</p>
+<p><img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstit82mbzj30k606aaag.jpg" alt=""></p>
+<p>提示:有一个没有被追踪的文件,你可以使用 git add +文件名来将该改动(或者直接使用 git add . 将所有改动)放入暂存区</p>
+<p>接下来我们使用git add . 并继续使用git status 查看当前状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstj0zto7gj30ig075q3g.jpg" alt=""></p>
+<p>可以看到现在提示有新的改变需要被提交,或者你可以使用git rm –cached 来把该改动从暂存拿回来.</p>
+<p>然后我们使用 git commit -m “add readme”,然后在使用git status来查看状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;add readme&quot;</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstj8lyjf3j30ia05gaai.jpg" alt=""></p>
+</li>
+</ul>
+<p>这里 -m后面的””内容写本次提交的备注,方便你找老板要钱.</p>
+<p>执行后提示有一个改动已经提交,工作区clean</p>
+<ul>
+<li>这样一来我们整个改动已经在本地保存下来</li>
+</ul>
+</li>
+<li><p>将本地仓库上传到GIthub：</p>
+<ul>
+<li><p>现在我们把刚刚建立的git_test上传到Github上面:</p>
+<p>首先建立一个新的仓库,注意名字最好与本地目录一致以方便辨别:</p>
+<p><img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstjfrpo54j30y40im0ub.jpg" alt=""></p>
+</li>
+</ul>
+<p>然后会看到有三个选项：</p>
+<p><img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstjihhsr3j310v0cwjsh.jpg" alt=""></p>
+<p>由于我们想把已有的仓库上传到Github所以我们选择第二个：</p>
+<p>在命令行中依次输入网页上面给出的命令：</p>
+<p><img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstjlyk2vej30jt05tmxp.jpg" alt=""></p>
+<p>然后刷新该页面，看到仓库建立成功</p>
+</li>
+<li><p>将Github上的仓库下载到本地：</p>
+<ul>
+<li><p>当我们本地的文件被误删了怎么办呢？</p>
+</li>
+<li><p>别慌，我们不是上传Github了么,下载下来不就可以啦：</p>
+<p>带到该仓库点击绿色的clone or download 复杂链接，然后在想要下载文件的目录里面使用git clone+链接的命令来下载该文件</p>
+<p><img src="http://ww1.sinaimg.cn/large/006qwL0ggy1fstjubmwzqj30j308275a.jpg" alt=""></p>
+<p>这样以来我们被误删的文件又回来了，是不是很方便。</p>
+</li>
+<li><p>在看到别人Github里面一些感兴趣的东西也可以用同样的方式下载下来哦</p>
+</li>
+</ul>
+</li>
+</ol>
+
       
     </div>
     
@@ -449,8 +524,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -503,6 +587,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git是什么玩意？"><span class="nav-number">1.</span> <span class="nav-text">git是什么玩意？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常见的使用git的三种情景："><span class="nav-number">2.</span> <span class="nav-text">常见的使用git的三种情景：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
